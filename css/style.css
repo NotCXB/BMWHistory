@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 20px;
+    background-color: #2D2E33;
+    color: #F5F5F7;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Keep headings and paragraphs aligned in a centered reading column. */
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 850px;
+    margin-inline: auto;
+    text-align: left;
+}
+
+/* ID selectors distinguish the page header from the footer. */
+#site-header {
+    margin-bottom: 40px;
+    padding: 32px;
+    background-color: #1C3048;
+    border-bottom: 4px solid #A9CEFF;
+    border-radius: 12px;
+}
+
+#site-footer {
+    margin-top: 40px;
+    padding: 24px 32px;
+    background-color: #202126;
+    border-top: 2px solid #9798AC;
+    text-align: center;
+}
+
+#site-header p,
+#site-footer p {
+    margin-bottom: 0;
+}
+
+/* Class selectors give the sections shared spacing and different colors. */
+.content-section {
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.content-section > :last-child {
+    margin-bottom: 0;
+}
+
+.section-intro {
+    background-color: #383A42;
+    border-left: 4px solid #A9CEFF;
+}
+
+.section-feature {
+    background-color: #263B46;
+    border-top: 4px solid #8DD9CF;
+}
+
+.section-highlight {
+    background-color: #41374B;
+    border-top: 4px solid #D8B5F5;
+}
+
+/* The index introduction spans the row; the other sections sit side by side. */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.content-container > .content-section {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+#beginnings {
+    flex-basis: 100%;
+}
+
+@media (max-width: 700px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-container > .content-section {
+        width: 100%;
+        flex: auto;
+    }
+
+    #site-header,
+    #site-footer,
+    .content-section {
+        padding: 20px;
+    }
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 16px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul,
+ol {
+    margin: 0 0 24px;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0;
+}
+
+a {
+    color: #A9CEFF;
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
