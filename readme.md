@@ -1,0 +1,1 @@
+For assignment 4 I completed the audit on Lighthouse and WAVE and I got a perfect score, So I don't have changes to fix accessibility.
