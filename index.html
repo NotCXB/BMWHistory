@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of BMW</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body class="py-4 px-3">
+    <div class="container site-container">
 
     <!-- Header contains the main title of the page -->
-    <header id="site-header">
+    <header id="site-header" class="p-4 mb-4">
         <h1>The History of BMW</h1>
         <p>From aircraft engines to motorcycles and automobiles.</p>
     </header>
 
     <!-- Main contains the primary content of the page -->
-    <main class="content-container">
+    <main>
+        <div class="row g-4">
 
         <!-- Section about the beginning of BMW -->
-        <section id="beginnings" class="content-section section-intro">
+        <div class="col-12">
+        <section id="beginnings" class="content-section section-intro p-4">
             <h2>The Beginning of BMW</h2>
 
             <p>
@@ -36,9 +40,11 @@
                 and performance vehicles.
             </p>
         </section>
+        </div>
 
         <!-- Section about BMW motorcycles -->
-        <section id="motorcycles" class="content-section section-feature">
+        <div class="col-12 col-md-6">
+        <section id="motorcycles" class="content-section section-feature p-4">
             <h2>BMW Motorcycles</h2>
 
             <p>
@@ -49,7 +55,7 @@
             </p>
 
             <!-- Relative image stored in the img folder -->
-            <img src="img/bmwmotorcycle.jpg"
+            <img class="img-fluid d-block my-4" src="img/bmwmotorcycle.jpg"
                  alt="BMW performance motorcycle"
                  width="500">
 
@@ -64,9 +70,11 @@
                 <li>SUVs</li>
             </ul>
         </section>
+        </div>
 
         <!-- Section showing an externally hosted BMW image -->
-        <section id="performance" class="content-section section-highlight">
+        <div class="col-12 col-md-6">
+        <section id="performance" class="content-section section-highlight p-4">
             <h2>BMW Performance</h2>
 
             <p>
@@ -75,20 +83,24 @@
             </p>
 
             <!-- External image using an online image address -->
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFF3oUhXI8_KHjlwBqCIRt8ZKuoY01_vbbR8o73pODVg&s"
+            <img class="img-fluid d-block my-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFF3oUhXI8_KHjlwBqCIRt8ZKuoY01_vbbR8o73pODVg&s"
                  alt="BMW M performance logo"
                  width="400">
         </section>
+        </div>
 
+        </div>
     </main>
 
     <!-- Footer links to the second page -->
-    <footer id="site-footer">
+    <footer id="site-footer" class="mt-4 p-4 text-center">
         <p>
-            <a href="page2.html">Continue to BMW's Modern History</a>
+            <a class="btn btn-outline-light btn-history" href="page2.html">Continue to BMW's Modern History</a>
         </p>
     </footer>
 
+    </div>
 </body>
 
 </html>
+
